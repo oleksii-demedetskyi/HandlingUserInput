@@ -1,0 +1,3 @@
+protocol Action {}
+
+enum Actions {}

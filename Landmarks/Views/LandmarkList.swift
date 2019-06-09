@@ -7,7 +7,7 @@ A view showing a list of landmarks.
 
 import SwiftUI
 
-struct LandmarkList<Row, Details>: ConnectedView where Row: View, Details: View {
+struct LandmarkList<Row: View, Details: View>: ConnectedView {
     let row: (Landmark.ID) -> Row
     let details: (Landmark.ID) -> Details
     
